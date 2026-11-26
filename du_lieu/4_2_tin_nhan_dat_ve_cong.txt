@@ -1,0 +1,35 @@
+BẢNG MÃ LOẠI VÉ
+VECN – Vé cả ngày
+VECH – Vé buổi chiều (từ 14 giờ)
+VEVIP – Vé cả ngày kèm khu VIP
+
+QUY TẮC CHUẨN HOÁ (5 quy tắc)
+1. loai_ve lấy theo bảng mã loại vé.
+2. ngay_choi dạng YYYY-MM-DD; tin nhắn không ghi năm thì lấy năm 2026; không có ngày cụ thể thì null.
+3. Khách không nhắc trẻ em thì tre_em là 0 và mọi khách là người lớn.
+4. loai_tu chỉ nhận "nho", "lon" hoặc null.
+5. ghi_chu chỉ ghi yêu cầu đặc biệt về sức khoẻ, an toàn khi bơi, đi lại; không có thì null.
+
+======================================================
+HAI TIN NHẮN MẪU ĐÃ XỬ LÝ ĐÚNG (dùng làm ví dụ)
+======================================================
+
+Tin nhắn mẫu 1:
+Đặt giúp em vé cả ngày 15/11/2026, 2 người lớn 2 bé, thuê tủ lớn nha. 1 bé chưa biết bơi.
+Kết quả đúng:
+{"loai_ve": "VECN", "ngay_choi": "2026-11-15", "nguoi_lon": 2, "tre_em": 2, "loai_tu": "lon", "ghi_chu": "1 bé chưa biết bơi"}
+
+Tin nhắn mẫu 2:
+Vé VIP còn không ạ, em đi 1 mình, thuê tủ nhỏ, ngày nào cũng được.
+Kết quả đúng:
+{"loai_ve": "VEVIP", "ngay_choi": null, "nguoi_lon": 1, "tre_em": 0, "loai_tu": "nho", "ghi_chu": null}
+
+======================================================
+BA TIN NHẮN CẦN XỬ LÝ
+======================================================
+
+TN1: Cho mình 2 vé người lớn và 1 vé trẻ em 8 tuổi loại vé buổi chiều ngày 20/12 nhé, thuê tủ nhỏ.
+
+TN2: Đặt 3 vé cả ngày ngày 03/01/2027 ạ. Một người đang bó bột tay.
+
+TN3: Vé VIP dịp nghỉ Tết còn không ạ? Nhóm em 4 người lớn, một bạn đi xe lăn, thuê tủ lớn.
