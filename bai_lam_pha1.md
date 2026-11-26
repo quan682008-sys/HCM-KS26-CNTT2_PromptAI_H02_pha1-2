@@ -120,6 +120,7 @@ YÊU CẦU BÁO GIÁ
  - mỗi bước ghi phép tính
  - dòng cuối có dạng [RESULT:<tổng tiền>đồng]
 Hãy suy nghĩ từng bước
+Ghi kết luận AI đúng hay sai; nếu sai, ghi bước sai đầu tiên và kết quả đúng của bước đó
 ```
 
 ## 4.4. Dây chuyền xử lý khiếu nại (Prompt Chaining)
