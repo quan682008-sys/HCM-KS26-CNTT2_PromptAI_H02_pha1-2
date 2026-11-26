@@ -1,8 +1,8 @@
 # BÀI LÀM PHA 2 – HACKATHON 02
 
 - **Mã đề:** 07
-- **Họ tên:**
-- **Lớp:**
+- **Họ tên:Nguyen Minh Quan**
+- **Lớp:CNTT2**
 - **Link repository Pha2:**
 - **Công cụ AI đã dùng (ChatGPT/Claude/Gemini):**
 
