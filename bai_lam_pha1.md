@@ -63,6 +63,14 @@ E:
 chỉ xuất dữ liệu thành json, không chào hỏi, không giải thích
  2 ví dụ Few-shot:
  <tin_nhan>
+TN1: Cho mình 2 vé người lớn và 1 vé trẻ em 8 tuổi loại vé buổi chiều ngày 20/12 nhé, thuê tủ nhỏ.
+
+TN2: Đặt 3 vé cả ngày ngày 03/01/2027 ạ. Một người đang bó bột tay.
+
+TN3: Vé VIP dịp nghỉ Tết còn không ạ? Nhóm em 4 người lớn, một bạn đi xe lăn, thuê tủ lớn.
+
+</tin_nhan>
+ 2 ví dụ Few-shot:
  Tin nhắn mẫu 1:
 Đặt giúp em vé cả ngày 15/11/2026, 2 người lớn 2 bé, thuê tủ lớn nha. 1 bé chưa biết bơi.
 Kết quả đúng:
@@ -72,7 +80,7 @@ Tin nhắn mẫu 2:
 Vé VIP còn không ạ, em đi 1 mình, thuê tủ nhỏ, ngày nào cũng được.
 Kết quả đúng:
 {"loai_ve": "VEVIP", "ngay_choi": null, "nguoi_lon": 1, "tre_em": 0, "loai_tu": "nho", "ghi_chu": null}
-</tin_nhan>
+
 
 ```
 
@@ -112,6 +120,7 @@ YÊU CẦU BÁO GIÁ
  - mỗi bước ghi phép tính
  - dòng cuối có dạng [RESULT:<tổng tiền>đồng]
 Hãy suy nghĩ từng bước
+Ghi kết luận AI đúng hay sai; nếu sai, ghi bước sai đầu tiên và kết quả đúng của bước đó
 ```
 
 ## 4.4. Dây chuyền xử lý khiếu nại (Prompt Chaining)
